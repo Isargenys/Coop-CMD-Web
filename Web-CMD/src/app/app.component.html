@@ -1,29 +1,52 @@
-<div *ngIf="isLoggedIn; else elseBlock">
+<!-- <div *ngIf="userpage">
 
-  <div class="d-flex" id="wrapper">
+<ng-template #userLogged>
 
-    <div class="border-end bg-white" id="sidebar-wrapper">
-      <div class="tituloP sidebar-heading border-bottom text-center">Coop-CMD</div>
-      <div class="list-group list-group-flush">
-        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!"><i
-            class="bi bi-house"></i> Inicio
-        </a>
-        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
-          <i class="bi bi-piggy-bank"></i> Ahorros y aportaciones
-        </a>
-        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
-          <i class="bi bi-cash-stack"></i> Préstamos
-        </a>
-        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
-          <i class="bi bi-arrow-left-right"></i> Solicitudes
-        </a>
-        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
-          <i class="bi bi-person"></i> Perfil
-        </a>
-        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
-          <i class="bi bi-box-arrow-right"></i> Salir del sistema
-        </a>
-      </div>
+    <div class="d-flex" id="wrapper">
+        
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light text-center">Coop-CMD</div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
+                    <i class="bi bi-house-door-fill"></i> Inicio
+                </a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
+                    <i class="bi bi-cash-coin"></i> Prestamos
+                </a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
+                    <i class="bi bi-piggy-bank-fill"></i> Ahorros y Aportaciones
+                </a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
+                    <i class="bi bi-send-fill"></i> Solicitudes
+                </a>
+            </div>
+        </div>
+        
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item"><a class="nav-link btn btn-primary" href="#!">
+                                <i class="bi bi-bell"></i>
+                            </a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-person-fill"></i> Nombre Usuario</a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#!">Action</a>
+                                    <a class="dropdown-item" href="#!">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#!">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
     </div>
 
     <div id="page-content-wrapper">
@@ -47,7 +70,6 @@
           </div>
         </div>
       </nav>
-      <!-- Page content-->
       <div class="container-fluid">
         <router-outlet></router-outlet>
       </div>
@@ -56,8 +78,11 @@
 
 
 
-</div>
+    
+</ng-template>
 
 <ng-template #elseBlock>
-  <app-login></app-login>
-</ng-template>
+    <app-login></app-login>
+</ng-template> -->
+
+<router-outlet></router-outlet>
