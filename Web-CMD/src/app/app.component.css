@@ -31,3 +31,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper { margin-left: 0; }
         margin-left: -15rem;
     }
 }
+
+.tituloP{
+    color:#1c140d;
+}
