@@ -14,17 +14,25 @@ import { AuthService } from './auth/auth-guard.service';
             <div class="sidebar-heading border-bottom bg-light text-center">Coop-CMD</div>
             <div class="list-group list-group-flush">
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
-                    <i class="bi bi-house-door-fill"></i> Inicio
+                    <i class="bi bi-house-door"></i> Inicio
                 </a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
                     <i class="bi bi-cash-coin"></i> Prestamos
                 </a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
-                    <i class="bi bi-piggy-bank-fill"></i> Ahorros y Aportaciones
+                    <i class="bi bi-piggy-bank"></i> Ahorros y Aportaciones
                 </a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
-                    <i class="bi bi-send-fill"></i> Solicitudes
+                <i class="bi bi-arrow-left-right"></i> Solicitudes
                 </a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
+                <i class="bi bi-person"></i> Perfil
+            </a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
+            <i class="bi bi-box-arrow-right"></i> Salir del sistema
+        </a>
+
+
             </div>
         </div>
         
@@ -124,7 +132,7 @@ export class AppComponent {
 
   // isLoggedIn = true;
 
-  constructor(public authService: AuthService) {}
+  constructor(public authService: AuthService) { }
 
   // isUserLoggedIn() {
   //   this.authService.isUserLoggedIn();

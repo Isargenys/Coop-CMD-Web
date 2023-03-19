@@ -6,17 +6,17 @@ import { CookieService } from 'ngx-cookie-service';
     providedIn: 'root'
 })
 export class AuthService {
-    public userpage = false;
-    
-    constructor(private http: HttpClient, private cookieService: CookieService) {}
+    public userpage = true;
+
+    constructor(private http: HttpClient, private cookieService: CookieService) { }
 
     login(/*email: string, password: string*/) {
         // this.http.post('/login', {email, password}).subscribe((response: any) => {
         //     this.cookieService.set('access_token', response.access_token);
         //     this.userpage = true; 
         // });
-        
-        this.userpage = true; 
+
+        this.userpage = true;
     }
 
     logout() {
