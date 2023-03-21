@@ -89,3 +89,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper { margin-left: 0; }
 .tituloP{
     color:#1c140d;
 }
+
+.empresaName, .navbar{
+    background-color: #468C00;
+}
