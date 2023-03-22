@@ -35,10 +35,10 @@
     border-radius: 20px;
   }
 
-   a{
+   /* a{
     color: #626209;
     text-decoration: none;
-  }
+  } */
 
   .form-check-input:checked{
     background-color: #b7b817;
@@ -58,12 +58,26 @@
     min-height: 100vh;
     margin-left: -15rem;
     transition: margin 0.25s ease-out;
+    background-color: #468c00;
+}
+
+#sidebar-wrapper, a{
+  background-color: #468C00;
+  color: #ffff;
+  text-decoration: none;
+  /* border-right-color: #386f00 !important; */
+}
+
+a:hover{
+  background-color: #386f00 !important;
+  color: #fff !important;
 }
 
 #sidebar-wrapper .sidebar-heading {
     padding: 0.875rem 1.25rem;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
 }
+
 
 #sidebar-wrapper .list-group {
     width: 15rem;
@@ -92,4 +106,12 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper { margin-left: 0; }
 
 .empresaName, .navbar{
     background-color: #468C00;
+}
+
+.empresaName {
+  border-bottom-color: #386f00 !important;
+}
+
+.list-group-item{
+  border-bottom-color: #386f00;
 }

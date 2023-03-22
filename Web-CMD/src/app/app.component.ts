@@ -10,8 +10,11 @@ import { AuthService } from './auth/auth-guard.service';
 
     <div class="d-flex" id="wrapper">
         
-        <div class="border-end " id="sidebar-wrapper">
-            <div class="empresaName sidebar-heading border-bottom  text-center text-white">Coop-CMD</div>
+        <div class=" " id="sidebar-wrapper">
+            <div class="empresaName sidebar-heading border-bottom  text-center text-white">
+            Coop-CMD
+            
+            </div>
             <div class="list-group list-group-flush">
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
                     <i class="bi bi-house-door"></i> Inicio
