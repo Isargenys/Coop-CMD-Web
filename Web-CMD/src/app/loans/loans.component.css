@@ -1,0 +1,43 @@
+.tituloPrestamo{
+    color: #626209;
+}
+
+.cardPrestamo{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.cardPrestamo:hover{
+    background-color: #f4f2f2;
+}
+
+.tituloCuenta{
+    color: #b7b817;
+    font-weight: 600;
+}
+
+.resumen{
+    color: #5a4e3c;
+}
+.Ncuenta{
+    margin-top: -17px;
+    color: #5a4e3c;
+
+}
+
+.numeroCuenta{
+    color: #5a4e3c;
+    font-weight: 700;
+}
+
+.balanceDisponible{
+    color: #b7b817;
+    font-weight: 500;
+}
+
+.balance{
+    color: #5a4e3c;
+}
+
+.iconoNext{
+    color: #b7b817;
+}

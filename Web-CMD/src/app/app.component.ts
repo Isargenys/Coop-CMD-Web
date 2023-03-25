@@ -16,22 +16,22 @@ import { AuthService } from './auth/auth-guard.service';
             
             </div>
             <div class="list-group list-group-flush">
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" routerLink="/" routerLinkActive="active">
                     <i class="bi bi-house-door"></i> Inicio
                 </a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" routerLink="prestamos" routerLinkActive="active">
                     <i class="bi bi-cash-coin"></i> Prestamos
                 </a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" routerLinkActive="active">
                     <i class="bi bi-piggy-bank"></i> Ahorros y Aportaciones
                 </a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" routerLinkActive="active">
                 <i class="bi bi-arrow-left-right"></i> Solicitudes
                 </a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" routerLinkActive="active">
                 <i class="bi bi-person"></i> Perfil
             </a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" routerLinkActive="active">
             <i class="bi bi-box-arrow-right"></i> Salir del sistema
         </a>
 

@@ -15,7 +15,7 @@ import { LoansComponent } from './loans/loans.component';
     LoginComponent,
     DashboardComponent,
     SavingsComponent,
-    LoansComponent
+    LoansComponent,
   ],
   imports: [
     BrowserModule,
