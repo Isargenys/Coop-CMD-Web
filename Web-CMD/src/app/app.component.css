@@ -61,6 +61,8 @@
     background-color: #468c00;
 }
 
+#page-content-wrapper { background: #f3f3f3; }
+
 #sidebar-wrapper, a{
   background-color: #468C00;
   color: #ffff;

@@ -6,21 +6,22 @@
     Resumen de cuentas de ahorros y aportaciones
   </p>
 </div>
-<div class="container mb-3">
+
+<div *ngFor="let a of accounts" class="container mb-3">
   <div class="card border-0">
     <div class="card-body">
-      <h5 class="tituloCuenta">Cuentas de ahorros</h5>
+      <h5 class="tituloCuenta">Cuentas de {{ a.AccountTypeName }}</h5>
       <div class="container">
         <div class="row">
           <div class="col-6">
             <p class="numeroCuenta">Numero de cuenta</p>
-            <p class="Ncuenta ms-3">0948923345</p>
+            <p class="Ncuenta ms-3">{{ a.AccountNumber }}</p>
           </div>
           <div class="col-3 ">
             <p class="balanceDisponible float-end"> Balance disponible</p>
           </div>
           <div class="col-3">
-            <p class="balance">$50,000.00</p>
+            <p class="balance"><strong>{{ a.Balance }}</strong></p>
           </div>
         </div>
       </div>
@@ -28,25 +29,4 @@
     </div>
   </div>
 </div>
-<div class="container">
-  <div class="card border-0">
-    <div class="card-body">
-      <h5 class="tituloCuenta">Cuentas de ahorros</h5>
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <p class="numeroCuenta">Numero de cuenta</p>
-            <p class="Ncuenta ms-3">0948923345</p>
-          </div>
-          <div class="col-3 ">
-            <p class="balanceDisponible float-end"> Balance disponible</p>
-          </div>
-          <div class="col-3">
-            <p class="balance">$50,000.00</p>
-          </div>
-        </div>
-      </div>
 
-    </div>
-  </div>
-</div>
