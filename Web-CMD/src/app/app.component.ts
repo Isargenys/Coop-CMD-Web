@@ -31,7 +31,7 @@ import { AuthService } from './auth/auth-guard.service';
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
                 <i class="bi bi-person"></i> Perfil
             </a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
+            <a class="list-group-item list-group-item-action  p-3" href="#!">
             <i class="bi bi-box-arrow-right"></i> Salir del sistema
         </a>
 
