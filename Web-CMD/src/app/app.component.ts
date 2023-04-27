@@ -31,7 +31,7 @@ import { AuthService } from './auth/auth-guard.service';
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
                 <i class="bi bi-person"></i> Perfil
             </a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">
+            <a class="list-group-item list-group-item-action  p-3" href="#!">
             <i class="bi bi-box-arrow-right"></i> Salir del sistema
         </a>
 
@@ -40,15 +40,15 @@ import { AuthService } from './auth/auth-guard.service';
         </div>
         
         <div id="page-content-wrapper">
-            <nav class="navbar navbar-expand-lg navbar-light  border-bottom">
+            <nav class="navbar navbar-expand-lg navbar-light  ">
                 <div class="container-fluid">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse mt-2" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                            <li class="nav-item"><a class="nav-link btn text-white" href="#!">
-                                <i class="bi bi-bell-fill"></i>
+                            <li class="nav-item"><a class="nav-link campana" href="#!">
+                                <i class="bi bi-bell-fill mx-5"></i>
                             </a></li>
                             <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle text-white" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle " id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="bi bi-person-fill"></i>
                                  Nombre Usuario
                                  </a>
