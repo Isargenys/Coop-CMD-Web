@@ -3,26 +3,29 @@
     Préstamos
   </h4>
 </div>
-<div class="container mb-3">
+<div *ngFor="let la of loansAccounts" class="container mb-3">
   <div class="cardPrestamo card border-0" data-bs-toggle="collapse" href="#collapseExample" role="button"
     aria-expanded="false" aria-controls="collapseExample">
     <div class=" card-body">
-      <h5 class="tituloCuenta">Cuentas de ahorros</h5>
+      <h5 class="tituloCuenta">Cuentas de Prestamos</h5>
       <div class="container">
         <div class="row">
           <div class="col-4">
             <p class="numeroCuenta">Numero de cuenta</p>
-            <p class="Ncuenta ms-3">0948923345</p>
+            <p class="Ncuenta ms-3">{{ la.AccountNumber }}</p>
           </div>
           <div class="col-4 ">
             <p class="balanceDisponible float-end"> Balance disponible del préstamo</p>
           </div>
           <div class="col-3">
             <p class="balance">
-              $50,000.00
+              ${{ la.Balance }}
             </p>
           </div>
           <div class="col-1 iconoNext">
+            <!-- <button (click)="getLoanTransaction({{ la.AccountID }})">Ver Detalles</button> -->
+            <!-- <button (click)="hello()">Ver Detalles</button> -->
+            <a [routerLink]="['/prestamos/transaccion/', la.AccountID]" class="btn btn-primary">Ver Detalles</a>
             <i class="bi bi-caret-right-fill fs-3"></i>
           </div>
         </div>
@@ -31,6 +34,7 @@
     </div>
   </div>
 </div>
+
 <div class="collapse container" id="collapseExample">
   <div class="card card-body border-0 ">
     <table class="table">

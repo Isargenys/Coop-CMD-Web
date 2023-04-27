@@ -13,4 +13,12 @@ export class AccountsService {
   getAllAccounts() {
     return this.http.get(this.urlAPI + '/Accounts');
   }
+
+  getAllSavingsAccounts() {
+    return this.http.get(this.urlAPI + '/Savings');
+  }
+  
+  getAllLoansAccounts() {
+    return this.http.get(this.urlAPI + '/Loans');
+  }
 }

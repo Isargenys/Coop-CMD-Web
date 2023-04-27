@@ -8,6 +8,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SavingsComponent } from './savings/savings.component';
 import { LoansComponent } from './loans/loans.component';
+import { LoanTransactionComponent } from './loans/loan-transaction/loan-transaction.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { LoansComponent } from './loans/loans.component';
     DashboardComponent,
     SavingsComponent,
     LoansComponent,
+    LoanTransactionComponent,
   ],
   imports: [
     BrowserModule,
