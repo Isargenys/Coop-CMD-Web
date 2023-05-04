@@ -6,11 +6,20 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoansComponent } from './loans/loans.component';
 import { SavingsComponent } from './savings/savings.component';
 import { LoanTransactionComponent } from './loans/loan-transaction/loan-transaction.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  // { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-  { path: "login", component: LoginComponent },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  
+  { path: '', component: HomeComponent, /*canActivate: [AuthGuardService],*/
+    children: [
+      { 
+        path: 'dashboard',
+        loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) 
+      }
+    ]
+  },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'ahorros', component: SavingsComponent },
   { path: 'prestamos', component: LoansComponent },

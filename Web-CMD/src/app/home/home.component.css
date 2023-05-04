@@ -11,7 +11,7 @@
     background-image: linear-gradient(to right, #7CAE00 , #468C00);  }
 
   .logo {
-    background-image: url('./auth/login/img/download.jpeg');
+    background-image: url('../auth/login/img/download.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -143,4 +143,3 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper { margin-left: 0; }
   color: #fff;
   border-color: #386f00;
 }
-
