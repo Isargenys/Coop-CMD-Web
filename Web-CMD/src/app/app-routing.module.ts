@@ -7,23 +7,26 @@ import { LoansComponent } from './loans/loans.component';
 import { SavingsComponent } from './savings/savings.component';
 import { LoanTransactionComponent } from './loans/loan-transaction/loan-transaction.component';
 import { HomeComponent } from './home/home.component';
+import { SolicitudesComponent } from './solicitudes/solicitudes.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
-  
-  { path: '', component: HomeComponent, /*canActivate: [AuthGuardService],*/
+
+  {
+    path: '', component: HomeComponent, /*canActivate: [AuthGuardService],*/
     children: [
-      { 
+      {
         path: 'dashboard',
-        loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) 
+        loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
       }
     ]
   },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'ahorros', component: SavingsComponent },
   { path: 'prestamos', component: LoansComponent },
-  { path: 'prestamos/transaccion/:id', component: LoanTransactionComponent }
+  { path: 'prestamos/transaccion/:id', component: LoanTransactionComponent },
+  { path: 'solicitudes', component: SolicitudesComponent }
 ];
 
 @NgModule({
