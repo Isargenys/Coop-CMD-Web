@@ -13,6 +13,7 @@ import { LoansComponent } from './loans/loans.component';
 import { LoanTransactionComponent } from './loans/loan-transaction/loan-transaction.component';
 import { HomeComponent } from './home/home.component';
 import { SolicitudesComponent } from './solicitudes/solicitudes.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SolicitudesComponent } from './solicitudes/solicitudes.component';
     LoanTransactionComponent,
     HomeComponent,
     SolicitudesComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,7 @@ import { SavingsComponent } from './savings/savings.component';
 import { LoanTransactionComponent } from './loans/loan-transaction/loan-transaction.component';
 import { HomeComponent } from './home/home.component';
 import { SolicitudesComponent } from './solicitudes/solicitudes.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -26,7 +27,8 @@ const routes: Routes = [
   { path: 'ahorros', component: SavingsComponent },
   { path: 'prestamos', component: LoansComponent },
   { path: 'prestamos/transaccion/:id', component: LoanTransactionComponent },
-  { path: 'solicitudes', component: SolicitudesComponent }
+  { path: 'solicitudes', component: SolicitudesComponent },
+  { path: 'register', component: RegisterComponent },
 ];
 
 @NgModule({

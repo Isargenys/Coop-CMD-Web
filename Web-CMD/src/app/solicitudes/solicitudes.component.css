@@ -1,0 +1,15 @@
+.btn-enviar{
+    color: #fff;
+    background-color: #295300;
+    width: 40%;
+    font-weight: 300;
+}
+
+.card{
+    border-radius: 20px;
+}
+
+label{
+    color: #295300;
+    font-weight: 500;
+}
